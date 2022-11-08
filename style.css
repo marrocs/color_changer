@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
+
+#area {
+    background-color: #0FFF;
+    /*centralizar div horizontal e vertical*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+    /*fim centralizar div*/
+}
+
+.container {
+    position: absolute;
+    margin: 0px;
+    top: 190px;
+    width: 100%;
+    text-align: center;
+    margin-top: 360px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.btn {
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 14px 40px
+}
+
+.btn:hover {
+    background-color: gray;
+}
