@@ -34,9 +34,11 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 12px;
-    padding: 14px 40px
+    padding: 14px 40px;
 }
 
 .btn:hover {
-    background-color: gray;
+    transition: 0.4s;
+    background-color: transparent;
+    opacity: 0.5;
 }

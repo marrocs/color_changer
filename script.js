@@ -1,25 +1,30 @@
 // Background color change
-var a = document.getElementById('area');
+//var a = document.getElementById('area');
+//var butance1 = document.getElementsById('btn1');
+let backArea = document.querySelector('#area')
+let buttonOne = document.querySelector('#btn1')
+
 
 function clicar() {
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
-    a.style.backgroundColor = '#' + randomColor;
+    backArea.style.backgroundColor = '#' + randomColor;
 };
 
-a.addEventListener('click', clicar);
+backArea.addEventListener('click', clicar);
+//a.addEventListener('click',()=>{};
 
 // Buttons actions
 // Btn1 - Flash
-var butance1 = document.getElementsById('btn1');
+function click_btn1() {
+    //var butance1 = document.getElementsById('btn1');
 
-function click_btn() {
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
-    a.style.backgroundColor = '#' + randomColor;
+    backArea.style.backgroundColor = '#' + randomColor;
 
-    setTimeout(click_btn, 1);
+    setTimeout(click_btn1, 1000)
 };
 
-butance1.addEventListener('click', click_btn);
+buttonOne.addEventListener('click', click_btn1);
 
